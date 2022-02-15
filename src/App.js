@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Students from './components/Students';
+import Estados from './components/Estados';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
       <h1 id='text'>Student Name</h1>
-      <Students></Students>
+  <Estados></Estados>
       
       </header>
     </div>
