@@ -7,6 +7,7 @@
   pointer-events: none;
 }
 #text{
+ text-align: center;
   text-decoration: underline;
 }
 @media (prefers-reduced-motion: no-preference) {
