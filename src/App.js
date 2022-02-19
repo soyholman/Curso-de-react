@@ -3,6 +3,7 @@ import './App.css';
 import Estados from './components/Estados';
 import Propsv from './components/PropsV';
 import Apic from './components/Apic';
+import Dom from './components/Dom';
 function App() {
   return (
     <div className="App">
@@ -10,7 +11,7 @@ function App() {
       <header className="App-header">
   
   {/* <Estados></Estados> */}
-   <Apic></Apic>
+ <Dom></Dom>
       </header>
     </div>
   );
