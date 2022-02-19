@@ -7,22 +7,19 @@ export default class Apic extends Component {
    this.state = {
       msg:"Welcome to My world"
    };
-   this.UpdateSetState=this.UpdateSetState.bind(this);
+   this.forceUpdateSetState=this.forceUpdateSetState.bind(this);
  }
 
- UpdateSetState(){
-     this.setState({
-
-msg:"Its a best ReactJs Tutorial"
-     });
+ forceUpdateSetState(){
+     this.forceUpdate();
  }
  
  
     render() {
     return (
       <div>
-        <h1>{this.state.msg}</h1>
-        <button onClick={this.UpdateSetState}>Set state</button>
+        <h3> Numero aleatorio: {Math.random()}</h3>
+        <button onClick={this.forceUpdateSetState}>Force Update</button>
       </div>
     )
   }

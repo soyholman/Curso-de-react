@@ -6,8 +6,9 @@ import Apic from './components/Apic';
 function App() {
   return (
     <div className="App">
+      <nav> <h1>React Course 👨‍💻</h1></nav>
       <header className="App-header">
-      <h1 id='text'>React Course 👨‍💻</h1>
+  
   {/* <Estados></Estados> */}
    <Apic></Apic>
       </header>
