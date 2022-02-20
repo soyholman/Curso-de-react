@@ -6,6 +6,7 @@ import Apic from './components/Apic';
 import Dom from './components/Dom';
 import Uncontrolled from './components/Uncontrolled';
 import Handling from './components/Handling';
+import Events from './components/Events';
 function App() {
   return (
     <div className="App">
@@ -13,7 +14,7 @@ function App() {
       <header className="App-header">
   
   {/* <Estados></Estados> */}
-<Handling></Handling>
+<Events></Events>
        </header>
     </div>
   );
