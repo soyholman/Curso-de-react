@@ -21,7 +21,7 @@ export default class Events extends Component {
     return (
       <div>
         <h2>Simple Event Example</h2>
-        <label htmlFor="">Enter Comapany Name</label>
+        <label htmlFor="">Enter Comapany Name:</label>
         <input type="text" id="companyname"  onChange={this.changetext.bind(this)}/>
         <h4>You Entered: {this.state.CompanyName}</h4>
       </div>
