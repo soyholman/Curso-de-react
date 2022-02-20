@@ -4,6 +4,8 @@ import Estados from './components/Estados';
 import Propsv from './components/PropsV';
 import Apic from './components/Apic';
 import Dom from './components/Dom';
+import Uncontrolled from './components/Uncontrolled';
+import Handling from './components/Handling';
 function App() {
   return (
     <div className="App">
@@ -11,8 +13,8 @@ function App() {
       <header className="App-header">
   
   {/* <Estados></Estados> */}
- <Dom></Dom>
-      </header>
+<Handling></Handling>
+       </header>
     </div>
   );
 }
