@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import ReactDom from 'react-dom';
-import '../App.css';
+import reactDom from 'react-dom';
 
+import '../App.css';
 
 function Message(props){
 

@@ -9,6 +9,15 @@ import Handling from './components/Handling';
 import ReactDom from 'react-dom';
 import Events from './components/Events';
 import Conditional_rendering from './components/Conditional_rendering';
+import List from './components/List';
+import reactDom from 'react-dom';
+var numbers=[1,2,3,4,5];
+const mult=numbers.map((numbers)=>{
+
+return(numbers*5);
+});
+console.log(mult);
+// reactDom.render(<p>Hello</p>, document.getElementById('root'));
 function App() {
   return (
     <div className="App">
@@ -16,8 +25,8 @@ function App() {
       <header className="App-header">
   
   {/* <Estados></Estados> */}
-  
-<Conditional_rendering></Conditional_rendering>
+  <List></List>
+
        </header>
     </div>
   );
