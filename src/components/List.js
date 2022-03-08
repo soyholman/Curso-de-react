@@ -2,24 +2,34 @@ import React, { Component } from 'react'
 import ReactDom from 'react-dom';
 
 
+ function Listitem(props) {
+ const item=props.item;
+  return (
+    <div>
+      <li >
+        {item}
+      </li>
+    </div>
+  )
+}
 
 
 
 
 export default function List( props) {
   const mylist= props.mylist;
-  const listitem= mylist.map((mylist)=>
-<li>{mylist}</li>
+  const listitem= mylist.map((strlist)=>
+<Listitem key={mylist.toString()} item={strlist}></Listitem>
   );
   
     return (
     <div>
-    <h2>rendering list inside component</h2>
-    <ul>{listitem}</ul>
+    <h2>Correct Key Usage Example</h2>
+    <ol>{listitem}</ol>
     </div>
   )
 }
-const mylist=['Holman','Angely','Alejandro Magno','Oscar','shame', 'discount','share with you my love'];
+const mylist=['Holman Morales','Angely',' Magno','Oscar','shame', 'discount','i wanna kw'];
 
 
 // ReactDom.render(
@@ -27,7 +37,7 @@ const mylist=['Holman','Angely','Alejandro Magno','Oscar','shame', 'discount','s
 //     document.getElementById('root')
 // )
 
-ReactDom.render(
+// ReactDom.render(
 
-<List mylist={mylist}></List>, document.getElementById('root'));
+// <List  mylist={mylist}></List>, document.getElementById('root'));
 

@@ -15,6 +15,7 @@ event.preventDefault();
   }
     render() {
     return (
+      <>
     <form onClick={this.updateSubmit}>
 <h1>Uncontrolled Form example</h1>
 <label htmlFor="">Nombre<input type="text" ref={this.input} /></label>
@@ -22,6 +23,7 @@ event.preventDefault();
 
 <input type="sumit" value="Submit" />
     </form>
+    </>
     )
   }
 }
